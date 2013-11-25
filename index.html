@@ -1,0 +1,74 @@
+<!--
+   do_not_waste_time_on_facebook.html
+  
+              DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                      Version 2, December 2004
+  
+   Copyright (C) 2013 Su Yeol Jeon
+  
+   Everyone is permitted to copy and distribute verbatim or modified
+   copies of this license document, and changing it is allowed as long
+   as the name is changed.
+  
+              DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  
+    0. You just DO WHAT THE FUCK YOU WANT TO.
+  
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+
+	<style>
+		body {
+			margin: 0;
+			background-color: #3B5998;
+		}
+		
+		.header {
+			padding-top: 83px;
+			font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: rgba(255, 255, 255, 0.8);
+			letter-spacing: -2px;
+			line-height: 0.87;
+			font-size: 90px;
+			text-align: center;
+		}
+
+		.header small {
+			display: block;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: 0;
+			padding-top: 5px;
+		}
+
+		.unlike {
+			background-image: url("./image/unlike.png");
+			background-size: 100% auto;
+			margin: 20px auto 0 auto;
+			width: 220px;
+			height: 203px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header"></div>
+		<div class="unlike"><div>
+	</div>
+	<script>
+		var messages = [
+			[["DO NOT", "WASTE", "TIME"], "ON FACEBOOK"],
+			[["봤던거", "또보고", "또보고"], "- 단편시집 뉴스피드 중에서"],
+			];
+
+		var i = Math.floor(Math.random() * messages.length);
+		document.title = messages[i][0].join(" ") + " " + messages[i][1];
+		document.getElementsByClassName("header")[0].innerHTML = messages[i][0].join("<br />") + "<small>" + messages[i][1] + "</small>";
+	</script>
+</body>
+</html>
